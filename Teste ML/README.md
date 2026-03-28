@@ -42,12 +42,19 @@ npm run cy:run
 teste-ml/
 ├── cypress/
 │   ├── e2e/
-│   │   └── mercadoLivre.cy.js    # Arquivo principal de testes E2E
+│   │   ├── header.cy.js           # Testes do header e navegação
+│   │   ├── search.cy.js           # Testes da funcionalidade de busca
+│   │   ├── carousel.cy.js         # Testes do carousel principal
+│   │   ├── dynamicAccess.cy.js    # Testes do acesso rápido
+│   │   ├── categories.cy.js       # Testes das categorias
+│   │   ├── metadata.cy.js         # Testes dos metadados da página
+│   │   ├── recommendations.cy.js  # Testes da seção de recomendações
+│   │   └── structural.cy.js       # Testes dos elementos estruturais
 │   ├── fixtures/
-│   │   └── example.json          # Dados de exemplo para testes
+│   │   └── example.json           # Dados de exemplo para testes
 │   └── support/
-│       ├── commands.js           # Comandos customizados do Cypress
-│       └── e2e.js                # Configurações de suporte para E2E
+│       ├── commands.js            # Comandos customizados do Cypress
+│       └── e2e.js                 # Configurações de suporte para E2E
 ├── cypress.config.js             # Configuração do Cypress
 ├── package.json                  # Dependências e scripts do projeto
 └── README.md                     # Este arquivo
